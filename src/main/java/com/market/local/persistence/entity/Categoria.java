@@ -1,6 +1,7 @@
 package com.market.local.persistence.entity;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "categorias")
@@ -13,6 +14,11 @@ public class Categoria {
     private String descripcion;
 
     private Boolean estado;
+
+    //variable que aloja la relacion en la tabla que contiene el @ManyToOne
+    @OneToMany(mappedBy = "categoria")
+    //una lista del tipo de relacion que existe con esta tabla
+    private List<Producto> productos;
 
     public Integer getIdCategoria() {
         return idCategoria;
