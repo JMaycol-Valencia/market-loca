@@ -1,20 +1,20 @@
 package com.market.local.domain;
 
 public class Product {
-    private int productoId;
+    private int productId;
     private String name;
     private int categoryId;
     private boolean price;
-    private int stocl;
+    private int stock;
     private boolean active;
     private Category category;
 
-    public int getProductoId() {
-        return productoId;
+    public int getProductId() {
+        return productId;
     }
 
-    public void setProductoId(int productoId) {
-        this.productoId = productoId;
+    public void setProductId(int productId) {
+        this.productId = productId;
     }
 
     public String getName() {
@@ -41,12 +41,12 @@ public class Product {
         this.price = price;
     }
 
-    public int getStocl() {
-        return stocl;
+    public int getStock() {
+        return stock;
     }
 
-    public void setStocl(int stocl) {
-        this.stocl = stocl;
+    public void setStock(int stock) {
+        this.stock = stock;
     }
 
     public boolean isActive() {
