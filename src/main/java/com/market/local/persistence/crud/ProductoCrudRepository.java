@@ -10,7 +10,7 @@ import java.util.Optional;
 public interface ProductoCrudRepository extends CrudRepository<Producto, Integer> {
     //creando nuestro primer querymethod
 
-    List<Producto> findByIdCategoriaOrderByAsc(int idCategoria);
+    List<Producto> findByIdCategoriaOrderByNombreAsc(int idCategoria);
 
     Optional<List<Producto>> findByCantidadStockLessThanAndEstadp(int cantidadStock, boolean estado);
 

@@ -16,7 +16,7 @@ public interface CategoryMapper  {
     })
     Category toCategory(Categoria categoria);
 
-    @InheritInverseConfiguration
+    @InheritInverseConfiguration            //ESTA ANOTACION INDICA A MAPSTRUCT - QUE LA SIGUIENTE CONVERSION ES LA INVERSA QUE LA DE ARRIBA
     @Mapping(target = "productos", ignore = true)
     Categoria toCategoria(Category category);
 }
